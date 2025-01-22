@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CursorRules Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="min-h-full flex flex-col">
+    <div class="w-full">
+        <nav class="bg-white shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <i class="fas fa-terminal text-indigo-600 text-2xl mr-2"></i>
+                        <span class="text-xl font-semibold text-gray-900">CursorRules Guide</span>
+                    </div>
+                    <div>
+                        <a href="https://github.com/blodyle/cursorrules" target="_blank" class="text-gray-500 hover:text-gray-700">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="bg-amber-50 border-b border-amber-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+                <p class="text-amber-800 text-sm text-center">
+                    <i class="fas fa-info-circle mr-2"></i>
+                    This guide is based on personal experience and is not officially associated with Cursor or its team. It represents my approach to structuring projects with Cursor AI.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Create Your .cursorrules File</h1>
+            <p class="text-xl text-gray-600">A step-by-step guide to structuring your project with Cursor AI</p>
+        </div>
+
+        <div class="grid gap-12">
+            <!-- Step 1 -->
+            <div class="bg-white rounded-lg shadow-sm p-8">
+                <div class="flex items-center mb-6">
+                    <div class="bg-indigo-100 rounded-full p-3 mr-4 w-12 h-12 flex items-center justify-center">
+                        <i class="fas fa-lightbulb text-indigo-600 text-xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-semibold text-gray-900">1. Find Your Idea</h2>
+                </div>
+                <p class="text-gray-600 mb-4">Start with a clear vision of what you want to build. Consider:</p>
+                <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
+                    <li>The problem you're solving</li>
+                    <li>Your target users</li>
+                    <li>Core functionality needed</li>
+                    <li>Technical requirements</li>
+                </ul>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="bg-white rounded-lg shadow-sm p-8">
+                <div class="flex items-center mb-6">
+                    <div class="bg-indigo-100 rounded-full p-3 mr-4 w-12 h-12 flex items-center justify-center">
+                        <i class="fas fa-clipboard-list text-indigo-600 text-xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-semibold text-gray-900">2. Create a Detailed Plan</h2>
+                </div>
+                <p class="text-gray-600 mb-4">Use ChatGPT to help create a comprehensive project plan. Ask for:</p>
+                <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                    <p class="text-gray-700 font-mono text-sm">
+                        "Can you help me create a detailed plan for [your project]? Please include:
+                        <br>- Core features and functionality
+                        <br>- Key areas of the application
+                        <br>- Target audience analysis
+                        <br>- Usability guidelines and best practices
+                        <br>- Technical requirements and constraints"
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="bg-white rounded-lg shadow-sm p-8">
+                <div class="flex items-center mb-6">
+                    <div class="bg-indigo-100 rounded-full p-3 mr-4 w-12 h-12 flex items-center justify-center">
+                        <i class="fas fa-code text-indigo-600 text-xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-semibold text-gray-900">3. Generate .cursorrules File</h2>
+                </div>
+                <p class="text-gray-600 mb-4">Use our template and example to generate your .cursorrules file with ChatGPT:</p>
+                <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                    <p class="text-gray-700 font-mono text-sm">
+                        "Using this template [base-structure] and following this example [.cursorrules-example], can you help me create a .cursorrules file for [your project]? Please maintain the same structure but adapt it to my project's specific needs. Write it in a canvas."
+                    </p>
+                </div>
+                <div class="mt-6">
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/blodyle/cursorrules/blob/main/base-structure" target="_blank" class="inline-flex items-center text-indigo-600 hover:text-indigo-700">
+                            <i class="fas fa-file-code mr-2"></i>
+                            View Template
+                        </a>
+                        <a href="https://github.com/blodyle/cursorrules/tree/main/examples" target="_blank" class="inline-flex items-center text-indigo-600 hover:text-indigo-700">
+                            <i class="fas fa-file-alt mr-2"></i>
+                            View Examples
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Important Note -->
+            <div class="bg-white rounded-lg shadow-sm p-8">
+                <div class="flex items-center mb-6">
+                    <div class="bg-indigo-100 rounded-full p-3 mr-4 w-12 h-12 flex items-center justify-center">
+                        <i class="fas fa-hand-point-right text-indigo-600 text-xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-semibold text-gray-900">Important Note</h2>
+                </div>
+                <div class="space-y-4">
+                    <p class="text-gray-600">This guide is meant to be a starting point, not a rigid framework. Here's what you should keep in mind:</p>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-puzzle-piece text-indigo-600 mt-1 mr-3"></i>
+                            <p class="text-gray-700">Every project is unique, with its own requirements, challenges, and quirks. Adapt these guidelines to fit your specific needs.</p>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-code-branch text-indigo-600 mt-1 mr-3"></i>
+                            <p class="text-gray-700">A technical background is invaluable for properly structuring your application, especially when it comes to separating responsibilities (frontend, backend, database access) and maintaining clean architecture.</p>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-tools text-indigo-600 mt-1 mr-3"></i>
+                            <p class="text-gray-700">While Cursor AI significantly speeds up development, understanding good coding practices helps with debugging and long-term maintainability.</p>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-smile-beam text-indigo-600 mt-1 mr-3"></i>
+                            <p class="text-gray-700">Most importantly, have fun! Use this as a learning opportunity to experiment with new approaches and find what works best for you and your team.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example Projects -->
+            <div class="bg-white rounded-lg shadow-sm p-8">
+                <div class="flex items-center mb-6">
+                    <div class="bg-indigo-100 rounded-full p-3 mr-4 w-12 h-12 flex items-center justify-center">
+                        <i class="fas fa-folder-open text-indigo-600 text-xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-semibold text-gray-900">Example Projects</h2>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Water Tracker -->
+                    <div class="border rounded-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-tint text-blue-500 text-xl mr-3"></i>
+                            <h3 class="text-lg font-semibold">Water Intake Tracker</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">Track daily water intake with reminders and progress visualization</p>
+                        <a href="https://github.com/blodyle/cursorrules/blob/main/examples/water-tracker.cursorrules" class="text-indigo-600 hover:text-indigo-700 text-sm">View Example →</a>
+                    </div>
+                    <!-- Todo App -->
+                    <div class="border rounded-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-tasks text-green-500 text-xl mr-3"></i>
+                            <h3 class="text-lg font-semibold">Todo Application</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">Simple task management with categories and reminders</p>
+                        <a href="https://github.com/blodyle/cursorrules/blob/main/examples/todo-app.cursorrules" class="text-indigo-600 hover:text-indigo-700 text-sm">View Example →</a>
+                    </div>
+                    <!-- Recipe Finder -->
+                    <div class="border rounded-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-utensils text-orange-500 text-xl mr-3"></i>
+                            <h3 class="text-lg font-semibold">Recipe Finder</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">Find recipes based on available ingredients</p>
+                        <a href="https://github.com/blodyle/cursorrules/blob/main/examples/recipe-finder.cursorrules" class="text-indigo-600 hover:text-indigo-700 text-sm">View Example →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Using Cursor Effectively -->
+            <div class="bg-white rounded-lg shadow-sm p-8">
+                <div class="flex items-center mb-6">
+                    <div class="bg-indigo-100 rounded-full p-3 mr-4 w-12 h-12 flex items-center justify-center">
+                        <i class="fas fa-magic text-indigo-600 text-xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-semibold text-gray-900">Using Cursor Effectively</h2>
+                </div>
+                <div class="space-y-6">
+                    <div class="border-l-4 border-indigo-500 pl-4">
+                        <h3 class="font-semibold text-lg mb-2">1. Project Setup</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
+                            <li>Create a new repository</li>
+                            <li>Initialize a basic project (e.g., Next.js app)</li>
+                            <li>Add .cursorrules file to the root</li>
+                            <li>Create separate .cursorrules for different tech stacks (e.g., frontend/backend)</li>
+                        </ul>
+                    </div>
+
+                    <div class="border-l-4 border-indigo-500 pl-4">
+                        <h3 class="font-semibold text-lg mb-2">2. Configure Documentation</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
+                            <li>Check Cursor's default documentation list</li>
+                            <li>Add custom documentation if needed</li>
+                            <li>Reload Cursor for proper indexing</li>
+                        </ul>
+                        <a href="https://raw.githubusercontent.com/getcursor/crawler/main/docs.jsonl" target="_blank" class="text-sm text-indigo-600 hover:text-indigo-700 mt-2 inline-block">
+                            View Default Documentation List →
+                        </a>
+                    </div>
+
+                    <div class="border-l-4 border-indigo-500 pl-4">
+                        <h3 class="font-semibold text-lg mb-2">3. Optimal Usage</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
+                            <li>Use Composer + Agent for code generation</li>
+                            <li>Prefer Claude-3.5-sonnet model for better results</li>
+                            <li>Use Chat for ideation and planning</li>
+                            <li>Keep .cursorrules updated as project evolves</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-lg mt-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-lightbulb text-amber-600 mr-2"></i>
+                            <h3 class="font-semibold text-lg text-gray-900">Pro Tip</h3>
+                        </div>
+                        <ul class="list-disc list-inside ml-4">
+                            <li class="text-gray-700">
+                                Always reload Cursor after adding new documentation or making significant changes to your .cursorrules file. This ensures better context awareness and more accurate suggestions.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Troubleshooting & Best Practices -->
+        <div class="bg-white rounded-lg shadow-sm p-8 mt-12">
+            <div class="flex items-center mb-6">
+                <div class="bg-indigo-100 rounded-full p-3 mr-4 w-12 h-12 flex items-center justify-center">
+                    <i class="fas fa-tools text-indigo-600 text-xl"></i>
+                </div>
+                <h2 class="text-2xl font-semibold text-gray-900">Troubleshooting & Best Practices</h2>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Refining Generated Code -->
+                <div class="border-l-4 border-indigo-500 pl-4">
+                    <h3 class="font-semibold text-lg mb-4">Refining Generated Code</h3>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="font-medium text-gray-900 mb-3">Example Scenario: Improving a Login Page</h4>
+                        <ol class="list-decimal list-inside text-gray-600 space-y-3 ml-4">
+                            <li>Take a screenshot of the current implementation</li>
+                            <li>Find a reference design you prefer</li>
+                            <li>In Composer, explain:
+                                <div class="bg-gray-100 p-4 rounded mt-2 font-mono text-sm">
+                                    "I'd like to modify the login page (@components/auth/LoginForm.tsx) to match this design style [reference screenshot]. Specifically, I prefer:
+                                    <br>- The centered card layout
+                                    <br>- Minimal color scheme
+                                    <br>- Larger input fields"
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Effective Communication -->
+                <div class="border-l-4 border-indigo-500 pl-4">
+                    <h3 class="font-semibold text-lg mb-4">Effective Communication with Cursor</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-3 ml-4">
+                        <li>Use <code class="bg-gray-100 px-2 py-1 rounded">@filename</code> to reference specific files
+                            <div class="bg-gray-100 p-4 rounded mt-2 font-mono text-sm">
+                                "Please update @components/Header.tsx to include the new navigation items"
+                            </div>
+                        </li>
+                        <li>Keep context focused and relevant
+                            <div class="bg-gray-100 p-4 rounded mt-2 font-mono text-sm">
+                                ❌ "Here's my entire component library with 50 files, please update the button..."
+                                <br>
+                                ✅ "Update the button styles in @components/Button.tsx to use the primary color"
+                            </div>
+                        </li>
+                        <li>Reference official documentation
+                            <div class="bg-gray-100 p-4 rounded mt-2 font-mono text-sm">
+                                "Following the Tailwind CSS docs in Cursor, let's implement a responsive navbar..."
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Pro Tips -->
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-lightbulb text-amber-600 mr-2"></i>
+                        <h3 class="font-semibold text-lg text-gray-900">Pro Tips</h3>
+                    </div>
+                    <ul class="list-disc list-inside space-y-3 ml-4">
+                        <li class="text-gray-700">Break down large changes into smaller, focused requests</li>
+                        <li class="text-gray-700">Use screenshots and examples for visual changes</li>
+                        <li class="text-gray-700">Keep the .cursorrules file updated as your project evolves</li>
+                        <li class="text-gray-700">Regularly check Cursor's documentation list for updates</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-16 text-center">
+            <p class="text-gray-600">Need help or want to contribute?</p>
+            <a href="https://github.com/blodyle/cursorrules" target="_blank" class="inline-flex items-center mt-2 text-indigo-600 hover:text-indigo-700">
+                <i class="fab fa-github mr-2"></i>
+                Visit our GitHub repository
+            </a>
+        </div>
+    </main>
+
+    <footer class="w-full bg-white py-4 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-500 mb-2">Made with ❤️ for the Cursor AI community</p>
+            <p class="text-gray-400 text-sm">
+                <i class="fas fa-robot mr-1"></i>
+                This guide and its examples were generated using AI (Claude-3.5-sonnet) in Cursor in about 1:30 hours.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

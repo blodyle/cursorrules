@@ -1,0 +1,111 @@
+# TaskMaster - Simple Todo Application
+
+## 1. Project Overview
+  ### Purpose
+  A minimalist todo application that helps users organize their daily tasks with a focus on simplicity and ease of use. The app features a clean interface, task categorization, and basic reminders to help users stay productive without overwhelming them with complex features.
+
+  ### Target Audience
+  - Primary: Busy professionals looking for a straightforward task management solution
+  - Secondary: Students managing assignments and deadlines
+
+  ### Tech Stack
+  - **Frontend:** [Next.js (v14.0.0)](https://nextjs.org/docs) with App Router
+  - **Backend:** [Next.js API Routes](https://nextjs.org/docs/api-routes/introduction)
+  - **Database:** [SQLite (v3.42.0)](https://www.sqlite.org/docs.html) for simplicity
+  - **Styling:** [Tailwind CSS (v3.3.0)](https://tailwindcss.com/docs)
+  - **Authentication:** [NextAuth.js (v4.24.5)](https://next-auth.js.org/)
+  - **Form Handling:** [React Hook Form (v7.49.2)](https://react-hook-form.com/)
+
+  ### Project Information
+  - **Name:** TaskMaster
+  - **Website:** taskmaster.example.com
+  - **Repository:** github.com/example/taskmaster
+  - **License:** MIT
+
+## 2. Core Design Rules
+  ### UI/UX Guidelines
+  1. **Responsive Design:** Mobile-first approach using Tailwind's responsive utilities
+  2. **Navigation:** Simple top navigation with task categories in a sidebar
+  3. **Color Scheme:**
+     - `primary`: #3B82F6 (blue-500) for actions and highlights
+     - `secondary`: #6B7280 (gray-500) for secondary elements
+  4. **Typography:** System fonts for optimal performance
+  5. **Components:** Use shadcn/ui for consistent UI elements
+  6. **Accessibility:** WCAG 2.1 Level AA compliance
+  7. **Language:** English for both UI and codebase
+
+  ### Development Standards
+  1. **Code Style:** ESLint with Next.js defaults
+  2. **Documentation:** JSDoc for functions, README for setup
+  3. **Testing:** Jest for unit tests, 70% coverage minimum
+  4. **Performance:** < 3s initial load time
+  5. **Security:** Input sanitization, CSRF protection
+
+## 3. Core Features and Areas
+  1. **Task Management**
+     - Purpose: Create and manage todo items
+     - Core functionality: CRUD operations for tasks
+     - Technical requirements: Real-time updates
+     - User interactions: Add, edit, complete tasks
+
+  2. **Categories**
+     - Purpose: Organize tasks by type
+     - Core functionality: Group tasks into categories
+     - Technical requirements: Database relations
+     - User interactions: Create, edit categories
+
+  3. **Basic Reminders**
+     - Purpose: Notify users of due tasks
+     - Core functionality: Browser notifications
+     - Technical requirements: Web Push API
+     - User interactions: Set due dates and times
+
+## 4. Development Guidelines
+  ### Frontend
+  - Use server components by default
+  - Client components only for interactive elements
+  - Keep components small and focused
+  - Use React Hook Form for form handling
+  - Implement optimistic updates for better UX
+
+  ### Backend
+  - RESTful API design
+  - Zod for request validation
+  - Error handling with proper status codes
+  - Rate limiting for API endpoints
+  - SQLite with Prisma ORM
+
+## 5. Cursor-Specific Guidelines
+  ### AI Interaction Rules
+  1. **File Organization:**
+     - `/app` - Next.js app router pages
+     - `/components` - Reusable UI components
+     - `/lib` - Utility functions and helpers
+     - `/prisma` - Database schema and migrations
+
+  2. **Code Documentation:**
+     - Document complex business logic
+     - Explain component props
+     - Comment database schema relations
+
+  3. **Component Guidelines:**
+     - Keep pages as server components
+     - Extract client interactivity to separate components
+     - Use composition over inheritance
+
+  4. **Testing Approach:**
+     - Group tests by feature
+     - Mock external dependencies
+     - Test user interactions thoroughly
+
+  5. **Error Handling:**
+     - Custom error classes
+     - User-friendly error messages
+     - Proper error logging
+
+## 6. Additional Notes
+  - Browser Support: Latest 2 versions of major browsers
+  - Offline Support: PWA capabilities
+  - Performance: Lighthouse score > 90
+  - Accessibility: Screen reader friendly
+  - Mobile Support: iOS 14+, Android 8+ 

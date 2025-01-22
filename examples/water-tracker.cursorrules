@@ -1,0 +1,111 @@
+# HydroTrack - Water Intake Tracker
+
+## 1. Project Overview
+  ### Purpose
+  A simple web application that helps users track their daily water intake, set hydration goals, and maintain healthy drinking habits. The app provides gentle reminders and visualizes daily progress to encourage consistent water consumption throughout the day.
+
+  ### Target Audience
+  - Primary: Health-conscious individuals wanting to improve hydration
+  - Secondary: Athletes and fitness enthusiasts tracking water intake
+
+  ### Tech Stack
+  - **Frontend:** [Next.js (v14.0.0)](https://nextjs.org/docs) with App Router
+  - **Backend:** [Next.js API Routes](https://nextjs.org/docs/api-routes/introduction)
+  - **Database:** [Supabase (v2.39.0)](https://supabase.com/docs) for real-time tracking
+  - **Styling:** [Tailwind CSS (v3.3.0)](https://tailwindcss.com/docs)
+  - **Charts:** [Chart.js (v4.4.1)](https://www.chartjs.org/docs/latest/) for intake visualization
+  - **Notifications:** [Web Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API)
+
+  ### Project Information
+  - **Name:** HydroTrack
+  - **Website:** hydrotrack.example.com
+  - **Repository:** github.com/example/hydrotrack
+  - **License:** MIT
+
+## 2. Core Design Rules
+  ### UI/UX Guidelines
+  1. **Responsive Design:** Mobile-first for easy tracking on the go
+  2. **Navigation:** Single-page design with tab navigation
+  3. **Color Scheme:**
+     - `primary`: #0EA5E9 (sky-500) for water-themed elements
+     - `secondary`: #E0F2FE (sky-100) for backgrounds
+  4. **Typography:** Large, clear numbers for intake display
+  5. **Components:** Use shadcn/ui with custom water-themed elements
+  6. **Accessibility:** Clear visual feedback for intake logging
+  7. **Language:** English with metric/imperial unit options
+
+  ### Development Standards
+  1. **Code Style:** ESLint with Next.js defaults
+  2. **Documentation:** TSDoc for TypeScript functions
+  3. **Testing:** Vitest for unit testing
+  4. **Performance:** Instant intake logging
+  5. **Security:** User data encryption
+
+## 3. Core Features and Areas
+  1. **Water Logging**
+     - Purpose: Track water consumption
+     - Core functionality: Quick-add buttons for common amounts
+     - Technical requirements: Real-time updates
+     - User interactions: One-tap logging
+
+  2. **Goal Setting**
+     - Purpose: Set daily water intake targets
+     - Core functionality: Calculate recommended intake
+     - Technical requirements: User preferences storage
+     - User interactions: Adjust daily goals
+
+  3. **Progress Tracking**
+     - Purpose: Visualize daily/weekly intake
+     - Core functionality: Progress charts
+     - Technical requirements: Chart.js integration
+     - User interactions: View different time periods
+
+## 4. Development Guidelines
+  ### Frontend
+  - Use server components for static content
+  - Client components for water logging
+  - Implement offline logging capability
+  - Optimize for quick interactions
+  - Add haptic feedback on mobile
+
+  ### Backend
+  - Simple REST endpoints
+  - Store user preferences
+  - Calculate intake statistics
+  - Handle timezone differences
+  - Implement data export
+
+## 5. Cursor-Specific Guidelines
+  ### AI Interaction Rules
+  1. **File Organization:**
+     - `/app` - Next.js app router pages
+     - `/components` - Water tracking components
+     - `/lib` - Calculation utilities
+     - `/types` - TypeScript definitions
+
+  2. **Code Documentation:**
+     - Document intake calculations
+     - Explain notification logic
+     - Comment unit conversions
+
+  3. **Component Guidelines:**
+     - Separate logging components
+     - Create reusable progress displays
+     - Modular reminder system
+
+  4. **Testing Approach:**
+     - Test intake calculations
+     - Verify goal tracking
+     - Ensure offline functionality
+
+  5. **Error Handling:**
+     - Handle offline scenarios
+     - Manage sync conflicts
+     - Validate intake amounts
+
+## 6. Additional Notes
+  - Offline Support: Local storage sync
+  - Performance: < 1s interaction time
+  - Accessibility: Voice input support
+  - Mobile Support: iOS/Android PWA
+  - Data Export: CSV/JSON formats 
