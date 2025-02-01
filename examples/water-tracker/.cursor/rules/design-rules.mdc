@@ -1,0 +1,22 @@
+---
+description: Core design rules for HydroTrack
+globs: *.tsx
+---
+## Core Design Rules
+  ### UI/UX Guidelines
+  1. **Responsive Design:** Mobile-first for easy tracking on the go
+  2. **Navigation:** Single-page design with tab navigation
+  3. **Color Scheme:**
+     - `primary`: #0EA5E9 (sky-500) for water-themed elements
+     - `secondary`: #E0F2FE (sky-100) for backgrounds
+  4. **Typography:** Large, clear numbers for intake display
+  5. **Components:** Use shadcn/ui with custom water-themed elements
+  6. **Accessibility:** Clear visual feedback for intake logging
+  7. **Language:** English with metric/imperial unit options
+
+  ### Development Standards
+  1. **Code Style:** ESLint with Next.js defaults
+  2. **Documentation:** TSDoc for TypeScript functions
+  3. **Testing:** Vitest for unit testing
+  4. **Performance:** Instant intake logging
+  5. **Security:** User data encryption 

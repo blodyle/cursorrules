@@ -1,0 +1,19 @@
+---
+description: Overview of the HydroTrack project
+globs: 
+---
+# HydroTrack
+
+## Project Overview
+  ### Purpose
+  A simple web application that helps users track their daily water intake, set hydration goals, and maintain healthy drinking habits. The app provides gentle reminders and visualizes daily progress to encourage consistent water consumption throughout the day.
+
+  ### Target Audience
+  - Primary: Health-conscious individuals wanting to improve hydration
+  - Secondary: Athletes and fitness enthusiasts tracking water intake
+
+  ### Project Information
+  - Project Name: HydroTrack
+  - Website: hydrotrack.example.com
+  - Repository: github.com/example/hydrotrack
+  - License: MIT 

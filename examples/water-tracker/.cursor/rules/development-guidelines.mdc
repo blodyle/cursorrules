@@ -1,0 +1,51 @@
+---
+description: Development guidelines for HydroTrack
+globs: 
+---
+## Development Guidelines
+  ### Frontend
+  - Use server components for static content
+  - Client components for water logging
+  - Implement offline logging capability
+  - Optimize for quick interactions
+  - Add haptic feedback on mobile
+
+  ### Backend
+  - Simple REST endpoints
+  - Store user preferences
+  - Calculate intake statistics
+  - Handle timezone differences
+  - Implement data export
+
+## File Organization:
+  - `/app` - Next.js app router pages
+  - `/components` - Water tracking components
+  - `/lib` - Calculation utilities
+  - `/types` - TypeScript definitions
+
+## Code Documentation:
+  - Document intake calculations
+  - Explain notification logic
+  - Comment unit conversions
+
+## Component Guidelines:
+  - Separate logging components
+  - Create reusable progress displays
+  - Modular reminder system
+
+## Testing Approach:
+  - Test intake calculations
+  - Verify goal tracking
+  - Ensure offline functionality
+
+## Error Handling:
+  - Handle offline scenarios
+  - Manage sync conflicts
+  - Validate intake amounts
+
+## Additional Notes
+  - Offline Support: Local storage sync
+  - Performance: < 1s interaction time
+  - Accessibility: Voice input support
+  - Mobile Support: iOS/Android PWA
+  - Data Export: CSV/JSON formats 

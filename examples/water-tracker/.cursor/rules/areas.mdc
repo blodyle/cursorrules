@@ -1,0 +1,22 @@
+---
+description: Core features and areas of HydroTrack
+globs: 
+---
+## Core Features and Areas
+  1. **Water Logging**
+     - Purpose: Track water consumption
+     - Core functionality: Quick-add buttons for common amounts
+     - Technical requirements: Real-time updates
+     - User interactions: One-tap logging
+
+  2. **Goal Setting**
+     - Purpose: Set daily water intake targets
+     - Core functionality: Calculate recommended intake
+     - Technical requirements: User preferences storage
+     - User interactions: Adjust daily goals
+
+  3. **Progress Tracking**
+     - Purpose: Visualize daily/weekly intake
+     - Core functionality: Progress charts
+     - Technical requirements: Chart.js integration
+     - User interactions: View different time periods

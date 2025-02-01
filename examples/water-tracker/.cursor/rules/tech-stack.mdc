@@ -1,0 +1,11 @@
+---
+description: Defines the tech stack for HydroTrack
+globs: 
+---
+  ### Tech Stack
+  - **Frontend:** [Next.js (v14.0.0)](https://nextjs.org/docs) with App Router
+  - **Backend:** [Next.js API Routes](https://nextjs.org/docs/api-routes/introduction)
+  - **Database:** [Supabase (v2.39.0)](https://supabase.com/docs) for real-time tracking
+  - **Styling:** [Tailwind CSS (v3.3.0)](https://tailwindcss.com/docs)
+  - **Charts:** [Chart.js (v4.4.1)](https://www.chartjs.org/docs/latest/) for intake visualization
+  - **Notifications:** [Web Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) 
