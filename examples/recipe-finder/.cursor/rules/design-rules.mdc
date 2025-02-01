@@ -1,0 +1,22 @@
+---
+description: Core design rules for QuickRecipe
+globs: *.tsx
+---
+## Core Design Rules
+  ### UI/UX Guidelines
+  1. **Responsive Design:** Adapt layout for kitchen use on mobile devices
+  2. **Navigation:** Simple search bar and ingredient filter system
+  3. **Color Scheme:**
+     - `primary`: #22C55E (green-500) for fresh/organic feel
+     - `secondary`: #F97316 (orange-500) for appetizing accents
+  4. **Typography:** Clear, readable fonts for recipe instructions
+  5. **Components:** Use shadcn/ui with custom recipe cards
+  6. **Accessibility:** High contrast for kitchen visibility
+  7. **Language:** English with ingredient names in multiple languages
+
+  ### Development Standards
+  1. **Code Style:** ESLint with Prettier integration
+  2. **Documentation:** Clear recipe schema documentation
+  3. **Testing:** Cypress for recipe search flows
+  4. **Performance:** Image optimization for recipes
+  5. **Security:** API rate limiting for search

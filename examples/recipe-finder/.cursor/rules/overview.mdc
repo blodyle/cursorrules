@@ -1,0 +1,19 @@
+---
+description: Overview of the QuickRecipe project
+globs: 
+---
+# QuickRecipe
+
+## Project Overview
+  ### Purpose
+  A simple recipe finder application that helps users discover cooking recipes based on available ingredients in their kitchen. The app focuses on reducing food waste and making cooking accessible to everyone by suggesting recipes with ingredients users already have.
+
+  ### Target Audience
+  - Primary: Home cooks looking for recipe ideas
+  - Secondary: Students and busy professionals with limited ingredients
+
+  ### Project Information
+  - Project Name: QuickRecipe
+  - Website: quickrecipe.example.com
+  - Repository: github.com/example/quickrecipe
+  - License: MIT

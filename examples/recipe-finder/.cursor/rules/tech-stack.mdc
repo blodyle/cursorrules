@@ -1,0 +1,11 @@
+---
+description: Defines the tech stack for QuickRecipe
+globs: 
+---
+  ### Tech Stack
+  - **Frontend:** [Next.js (v14.0.0)](https://nextjs.org/docs) with App Router
+  - **Backend:** [Next.js API Routes](https://nextjs.org/docs/api-routes/introduction)
+  - **Database:** [MongoDB (v7.0)](https://www.mongodb.com/docs/) for flexible recipe storage
+  - **Styling:** [Tailwind CSS (v3.3.0)](https://tailwindcss.com/docs)
+  - **Search:** [Algolia (v4.22.1)](https://www.algolia.com/doc/) for ingredient-based search
+  - **Image Storage:** [Cloudinary](https://cloudinary.com/documentation) for recipe images

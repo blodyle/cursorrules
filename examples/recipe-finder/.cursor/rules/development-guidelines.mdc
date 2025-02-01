@@ -1,0 +1,51 @@
+---
+description: Development guidelines for QuickRecipe
+globs: 
+---
+## Development Guidelines
+  ### Frontend
+  - Optimize images with next/image
+  - Implement progressive loading for recipes
+  - Use static generation for popular recipes
+  - Keep search interface simple
+  - Implement offline recipe viewing
+
+  ### Backend
+  - Cache common search queries
+  - Validate recipe data structure
+  - Implement ingredient normalization
+  - Handle recipe ratings
+  - API endpoints for recipe CRUD
+
+## File Organization:
+  - `/app` - Next.js app router pages
+  - `/components` - Recipe-related components
+  - `/lib` - Search and data utilities
+  - `/public` - Static recipe images
+
+## Code Documentation:
+  - Document recipe schema
+  - Explain search algorithms
+  - Comment image optimization logic
+
+## Component Guidelines:
+  - Separate recipe card components
+  - Create reusable ingredient filters
+  - Modular recipe instruction display
+
+## Testing Approach:
+  - Test search functionality
+  - Verify recipe calculations
+  - Ensure mobile usability
+
+## Error Handling:
+  - Handle missing ingredients
+  - Manage image loading failures
+  - Provide search fallbacks
+
+## Additional Notes
+  - Image Guidelines: Max 800x600, WebP format
+  - Offline Support: Cache recent recipes
+  - Performance: < 2s recipe load time
+  - Accessibility: Recipe steps keyboard navigable
+  - Mobile Support: Touch-friendly recipe controls

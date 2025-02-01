@@ -1,0 +1,22 @@
+---
+description: Core features and areas of QuickRecipe
+globs: 
+---
+## Core Features and Areas
+  1. **Recipe Search**
+     - Purpose: Find recipes by ingredients
+     - Core functionality: Ingredient-based search
+     - Technical requirements: Algolia integration
+     - User interactions: Add/remove ingredients
+
+  2. **Recipe Display**
+     - Purpose: Show recipe details clearly
+     - Core functionality: Step-by-step instructions
+     - Technical requirements: Responsive images
+     - User interactions: Serving size adjustment
+
+  3. **Favorites**
+     - Purpose: Save preferred recipes
+     - Core functionality: Bookmark system
+     - Technical requirements: Local storage
+     - User interactions: Save/unsave recipes
