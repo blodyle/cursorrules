@@ -6,18 +6,75 @@
     <title>CursorRules Guide</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <style>
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .gradient-bg {
+            background: linear-gradient(-45deg, #6366f1, #3b82f6, #06b6d4, #6366f1);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.02);
+        }
+        .glow {
+            box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-2px); }
+            100% { transform: translateY(0px); }
+        }
+        /* Add responsive styles */
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-x: auto;
+            max-width: 100%;
+        }
+        code {
+            word-break: break-all;
+            word-wrap: break-word;
+        }
+        @media (max-width: 640px) {
+            .text-5xl {
+                font-size: 2.5rem;
+            }
+            .p-8 {
+                padding: 1.5rem;
+            }
+            .space-x-4 {
+                gap: 0.75rem;
+            }
+        }
+    </style>
 </head>
-<body class="min-h-full flex flex-col">
+<body class="min-h-full flex flex-col bg-gray-50">
     <div class="w-full">
-        <nav class="bg-white shadow-sm">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
+        <nav class="glass-effect sticky top-0 z-50 shadow-lg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
                 <div class="flex justify-between items-center">
                     <div class="flex items-center">
-                        <i class="fas fa-terminal text-indigo-600 text-2xl mr-2"></i>
-                        <span class="text-xl font-semibold text-gray-900">CursorRules Guide</span>
+                        <i class="fas fa-terminal text-indigo-600 text-2xl mr-2 animate-pulse"></i>
+                        <span class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-blue-500">CursorRules Guide</span>
                     </div>
                     <div>
-                        <a href="https://github.com/blodyle/cursorrules" target="_blank" class="text-gray-500 hover:text-gray-700">
+                        <a href="https://github.com/blodyle/cursorrules" target="_blank" class="text-gray-500 hover:text-indigo-600 transition-colors duration-300">
                             <i class="fab fa-github text-2xl"></i>
                         </a>
                     </div>
@@ -25,30 +82,31 @@
             </div>
         </nav>
 
-        <div class="bg-amber-50 border-b border-amber-100">
+        <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-b border-amber-100">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
                 <p class="text-amber-800 text-sm text-center">
-                    <i class="fas fa-info-circle mr-2"></i>
-                    This guide is based on personal experience and is not officially associated with Cursor or its team. It represents my approach to structuring projects with Cursor AI.
+                    <i class="fas fa-info-circle mr-2 animate-bounce"></i>
+                    This guide is based on personal experience and is not officially associated with Cursor or its team.
                 </p>
             </div>
         </div>
     </div>
 
     <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="text-center mb-16">
-            <h1 class="text-4xl font-bold text-gray-900 mb-4">Create your project rules in Cursor</h1>
+        <div class="text-center mb-16 relative py-5">
+            <div class="absolute inset-0 -z-10 gradient-bg opacity-10 rounded-3xl"></div>
+            <h1 class="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-blue-500 to-cyan-400">Create your project rules in Cursor</h1>
             <p class="text-xl text-gray-600">A step-by-step guide to structuring your project with Cursor AI</p>
         </div>
 
         <div class="grid gap-12">
             <!-- Step 1 -->
-            <div class="bg-white rounded-lg shadow-sm p-8">
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover-scale glow">
                 <div class="flex items-center mb-6">
-                    <div class="bg-indigo-100 rounded-full p-3 mr-4 w-12 h-12 flex items-center justify-center">
-                        <i class="fas fa-lightbulb text-indigo-600 text-xl"></i>
+                    <div class="bg-gradient-to-br from-indigo-500 to-blue-600 rounded-2xl p-3 mr-4 w-14 h-14 flex items-center justify-center transform rotate-6">
+                        <i class="fas fa-lightbulb text-white text-xl"></i>
                     </div>
-                    <h2 class="text-2xl font-semibold text-gray-900">1. Find Your Idea</h2>
+                    <h2 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-blue-500">1. Find Your Idea</h2>
                 </div>
                 <p class="text-gray-600 mb-4">Start with a clear vision of what you want to build. Consider:</p>
                 <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
@@ -60,12 +118,12 @@
             </div>
 
             <!-- Step 2 -->
-            <div class="bg-white rounded-lg shadow-sm p-8">
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover-scale glow">
                 <div class="flex items-center mb-6">
-                    <div class="bg-indigo-100 rounded-full p-3 mr-4 w-12 h-12 flex items-center justify-center">
-                        <i class="fas fa-clipboard-list text-indigo-600 text-xl"></i>
+                    <div class="bg-gradient-to-br from-indigo-500 to-blue-600 rounded-2xl p-3 mr-4 w-14 h-14 flex items-center justify-center transform rotate-6">
+                        <i class="fas fa-clipboard-list text-white text-xl"></i>
                     </div>
-                    <h2 class="text-2xl font-semibold text-gray-900">2. Create a Detailed Plan</h2>
+                    <h2 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-blue-500">2. Create a Detailed Plan</h2>
                 </div>
                 <p class="text-gray-600 mb-4">Use ChatGPT to help create a comprehensive project plan. Ask for:</p>
                 <div class="bg-gray-50 p-6 rounded-lg mb-4">
@@ -81,12 +139,12 @@
             </div>
 
             <!-- Step 3 -->
-            <div class="bg-white rounded-lg shadow-sm p-8">
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover-scale glow">
                 <div class="flex items-center mb-6">
-                    <div class="bg-indigo-100 rounded-full p-3 mr-4 w-12 h-12 flex items-center justify-center">
-                        <i class="fas fa-code text-indigo-600 text-xl"></i>
+                    <div class="bg-gradient-to-br from-indigo-500 to-blue-600 rounded-2xl p-3 mr-4 w-14 h-14 flex items-center justify-center transform rotate-6">
+                        <i class="fas fa-code text-white text-xl"></i>
                     </div>
-                    <h2 class="text-2xl font-semibold text-gray-900">3. Generate .cursor/rules Files</h2>
+                    <h2 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-blue-500">3. Generate .cursor/rules Files</h2>
                 </div>
                 <p class="text-gray-600 mb-4">Use our templates and examples to generate your rules files with ChatGPT:</p>
                 <div class="bg-gray-50 p-6 rounded-lg mb-4">
@@ -108,87 +166,61 @@
                 </div>
             </div>
 
-            <!-- Important Note -->
-            <div class="bg-white rounded-lg shadow-sm p-8">
-                <div class="flex items-center mb-6">
-                    <div class="bg-indigo-100 rounded-full p-3 mr-4 w-12 h-12 flex items-center justify-center">
-                        <i class="fas fa-hand-point-right text-indigo-600 text-xl"></i>
-                    </div>
-                    <h2 class="text-2xl font-semibold text-gray-900">Important Note</h2>
-                </div>
-                <div class="space-y-4">
-                    <p class="text-gray-600">This guide is meant to be a starting point, not a rigid framework. Here's what you should keep in mind:</p>
-                    
-                    <div class="bg-gray-50 p-6 rounded-lg space-y-4">
-                        <div class="flex items-start">
-                            <i class="fas fa-puzzle-piece text-indigo-600 mt-1 mr-3"></i>
-                            <p class="text-gray-700">Every project is unique, with its own requirements, challenges, and quirks. Adapt these guidelines to fit your specific needs.</p>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <i class="fas fa-code-branch text-indigo-600 mt-1 mr-3"></i>
-                            <p class="text-gray-700">A technical background is invaluable for properly structuring your application, especially when it comes to separating responsibilities (frontend, backend, database access) and maintaining clean architecture.</p>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <i class="fas fa-tools text-indigo-600 mt-1 mr-3"></i>
-                            <p class="text-gray-700">While Cursor AI significantly speeds up development, understanding good coding practices helps with debugging and long-term maintainability.</p>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <i class="fas fa-smile-beam text-indigo-600 mt-1 mr-3"></i>
-                            <p class="text-gray-700">Most importantly, have fun! Use this as a learning opportunity to experiment with new approaches and find what works best for you and your team.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <!-- Example Projects -->
-            <div class="bg-white rounded-lg shadow-sm p-8">
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover-scale glow">
                 <div class="flex items-center mb-6">
-                    <div class="bg-indigo-100 rounded-full p-3 mr-4 w-12 h-12 flex items-center justify-center">
-                        <i class="fas fa-folder-open text-indigo-600 text-xl"></i>
+                    <div class="bg-gradient-to-br from-indigo-500 to-blue-600 rounded-2xl p-3 mr-4 w-14 h-14 flex items-center justify-center transform rotate-6">
+                        <i class="fas fa-folder-open text-white text-xl"></i>
                     </div>
-                    <h2 class="text-2xl font-semibold text-gray-900">Example Projects</h2>
+                    <h2 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-blue-500">Example Projects</h2>
                 </div>
                 <div class="grid md:grid-cols-3 gap-6">
                     <!-- Water Tracker -->
-                    <div class="border rounded-lg p-6">
+                    <div class="border rounded-xl p-6 hover-scale glass-effect">
                         <div class="flex items-center mb-4">
-                            <i class="fas fa-tint text-blue-500 text-xl mr-3"></i>
-                            <h3 class="text-lg font-semibold">Water Intake Tracker</h3>
+                            <i class="fas fa-tint text-blue-500 text-xl mr-3 animate-float"></i>
+                            <h3 class="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-cyan-400">Water Intake Tracker</h3>
                         </div>
                         <p class="text-gray-600 text-sm mb-4">Track daily water intake with reminders and progress visualization</p>
-                        <a href="https://github.com/blodyle/cursorrules/tree/master/examples/water-tracker/.cursor/rules" target="_blank" class="text-indigo-600 hover:text-indigo-700 text-sm">View Rules →</a>
+                        <a href="https://github.com/blodyle/cursorrules/tree/master/examples/water-tracker/.cursor/rules" target="_blank" class="text-indigo-600 hover:text-indigo-700 text-sm inline-flex items-center group">
+                            View Rules 
+                            <i class="fas fa-arrow-right ml-1 transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
                     </div>
                     <!-- Todo App -->
-                    <div class="border rounded-lg p-6">
+                    <div class="border rounded-xl p-6 hover-scale glass-effect">
                         <div class="flex items-center mb-4">
-                            <i class="fas fa-tasks text-green-500 text-xl mr-3"></i>
-                            <h3 class="text-lg font-semibold">Todo Application</h3>
+                            <i class="fas fa-tasks text-green-500 text-xl mr-3 animate-float"></i>
+                            <h3 class="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-emerald-400">Todo Application</h3>
                         </div>
                         <p class="text-gray-600 text-sm mb-4">Simple task management with categories and reminders</p>
-                        <a href="https://github.com/blodyle/cursorrules/tree/master/examples/todo-app/.cursor/rules" target="_blank" class="text-indigo-600 hover:text-indigo-700 text-sm">View Rules →</a>
+                        <a href="https://github.com/blodyle/cursorrules/tree/master/examples/todo-app/.cursor/rules" target="_blank" class="text-indigo-600 hover:text-indigo-700 text-sm inline-flex items-center group">
+                            View Rules 
+                            <i class="fas fa-arrow-right ml-1 transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
                     </div>
                     <!-- Recipe Finder -->
-                    <div class="border rounded-lg p-6">
+                    <div class="border rounded-xl p-6 hover-scale glass-effect">
                         <div class="flex items-center mb-4">
-                            <i class="fas fa-utensils text-orange-500 text-xl mr-3"></i>
-                            <h3 class="text-lg font-semibold">Recipe Finder</h3>
+                            <i class="fas fa-utensils text-orange-500 text-xl mr-3 animate-float"></i>
+                            <h3 class="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-amber-400">Recipe Finder</h3>
                         </div>
                         <p class="text-gray-600 text-sm mb-4">Find recipes based on available ingredients</p>
-                        <a href="https://github.com/blodyle/cursorrules/tree/master/examples/recipe-finder/.cursor/rules" target="_blank" class="text-indigo-600 hover:text-indigo-700 text-sm">View Rules →</a>
+                        <a href="https://github.com/blodyle/cursorrules/tree/master/examples/recipe-finder/.cursor/rules" target="_blank" class="text-indigo-600 hover:text-indigo-700 text-sm inline-flex items-center group">
+                            View Rules 
+                            <i class="fas fa-arrow-right ml-1 transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <!-- Using Cursor Effectively -->
-            <div class="bg-white rounded-lg shadow-sm p-8">
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover-scale glow">
                 <div class="flex items-center mb-6">
-                    <div class="bg-indigo-100 rounded-full p-3 mr-4 w-12 h-12 flex items-center justify-center">
-                        <i class="fas fa-magic text-indigo-600 text-xl"></i>
+                    <div class="bg-gradient-to-br from-indigo-500 to-blue-600 rounded-2xl p-3 mr-4 w-14 h-14 flex items-center justify-center transform rotate-6">
+                        <i class="fas fa-magic text-white text-xl"></i>
                     </div>
-                    <h2 class="text-2xl font-semibold text-gray-900">Using Cursor Effectively</h2>
+                    <h2 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-blue-500">Using Cursor Effectively</h2>
                 </div>
                 <div class="space-y-6">
                     <div class="border-l-4 border-indigo-500 pl-4">
@@ -205,10 +237,12 @@
                                 <i class="fas fa-lightbulb text-amber-600 mr-2"></i>
                                 <strong>Pro Tip:</strong> Use the <code class="bg-gray-200 px-1 rounded">globs</code> option in your rule files to make them specific to certain file patterns:
                             </p>
-                            <div class="font-mono text-sm bg-gray-100 p-3 rounded">
-                                <pre class="text-gray-700">---
+                            <div class="font-mono text-sm bg-gray-100 p-3 rounded overflow-x-auto">
+                                <pre class="text-gray-700 whitespace-pre-wrap break-words">---
 description: Style guidelines for React components
-globs: src/components/**/*.tsx, src/components/**/*.jsx
+globs: 
+  - src/components/**/*.tsx
+  - src/components/**/*.jsx
 ---
 
 ## Component Style Rules
@@ -244,28 +278,89 @@ globs: src/components/**/*.tsx, src/components/**/*.jsx
                         </ul>
                     </div>
 
-                    <div class="bg-gray-50 p-6 rounded-lg mt-6">
+                    <div class="bg-gradient-to-br from-gray-50 to-indigo-50 p-6 rounded-xl border border-indigo-100">
                         <div class="flex items-center mb-4">
-                            <i class="fas fa-lightbulb text-amber-600 mr-2"></i>
-                            <h3 class="font-semibold text-lg text-gray-900">Pro Tip</h3>
+                            <i class="fas fa-lightbulb text-amber-500 mr-2 animate-pulse"></i>
+                            <h3 class="font-bold text-lg bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-orange-400">Pro Tips</h3>
                         </div>
-                        <ul class="list-disc list-inside ml-4">
-                            <li class="text-gray-700">
-                                Always reload Cursor after adding new documentation or making significant changes to your cursor rules. This ensures better context awareness and more accurate suggestions.
-                            </li>
+                        <ul class="list-disc list-inside space-y-3 ml-4">
+                            <li class="text-gray-700 hover-scale transform-gpu">Break down large changes into smaller, focused requests</li>
+                            <li class="text-gray-700 hover-scale transform-gpu">Use screenshots and examples for visual changes</li>
+                            <li class="text-gray-700 hover-scale transform-gpu">Keep the cursor rules updated as your project evolves</li>
+                            <li class="text-gray-700 hover-scale transform-gpu">Regularly check Cursor's documentation list for updates</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Migration Guide -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover-scale glow">
+                <div class="flex items-center mb-6">
+                    <div class="bg-gradient-to-br from-indigo-500 to-blue-600 rounded-2xl p-3 mr-4 w-14 h-14 flex items-center justify-center transform rotate-6">
+                        <i class="fas fa-exchange-alt text-white text-xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-blue-500">Migrating from .cursorrules</h2>
+                </div>
+                <div class="space-y-6">
+                    <p class="text-gray-600">Follow these steps to migrate your existing .cursorrules file to the new structured format:</p>
+
+                    <div class="border-l-4 border-indigo-500 pl-4">
+                        <h3 class="font-semibold text-lg mb-4">1. Copy the Base Structure</h3>
+                        <p class="text-gray-600 mb-4">Start by copying our base structure from the cursor-rules-structure directory to your project:</p>
+                        <div class="bg-gray-50 p-4 rounded-lg font-mono text-sm overflow-x-auto">
+                            <pre class="text-gray-700 whitespace-pre-wrap break-words">my-project/
+├── .cursor/
+│   └── rules/
+│       ├── overview.mdc
+│       ├── tech-stack.mdc
+│       ├── design-rules.mdc
+│       ├── areas.mdc
+│       └── development-guidelines.mdc</pre>
+                        </div>
+                    </div>
+
+                    <div class="border-l-4 border-indigo-500 pl-4">
+                        <h3 class="font-semibold text-lg mb-4">2. Use Cursor to Update Rules</h3>
+                        <p class="text-gray-600 mb-4">Ask Cursor to help migrate your existing rules:</p>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="font-mono text-sm text-gray-700">
+                                "Based on my existing @.cursorrules file, can you help me update each file in .cursor/rules/ with my project's specific details? Please maintain the same structure but adapt the content to match my project's needs."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border-l-4 border-indigo-500 pl-4">
+                        <h3 class="font-semibold text-lg mb-4">3. Review and Enhance</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
+                            <li>Verify that all important information was transferred</li>
+                            <li>Add any missing project-specific guidelines</li>
+                            <li>Update file globs to match your project structure</li>
+                            <li>Remove any irrelevant sections</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-amber-50 p-6 rounded-lg">
+                        <div class="flex items-start">
+                            <i class="fas fa-lightbulb text-amber-600 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Pro Tip: Gradual Migration</h4>
+                                <p class="text-gray-700">
+                                    You can keep your old .cursorrules file while transitioning to the new structure. This allows you to migrate gradually and ensure everything works as expected before removing the old file.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Troubleshooting & Best Practices -->
-        <div class="bg-white rounded-lg shadow-sm p-8 mt-12">
+        <div class="bg-white rounded-2xl shadow-lg p-8 mt-12">
             <div class="flex items-center mb-6">
-                <div class="bg-indigo-100 rounded-full p-3 mr-4 w-12 h-12 flex items-center justify-center">
-                    <i class="fas fa-tools text-indigo-600 text-xl"></i>
+                <div class="bg-gradient-to-br from-indigo-500 to-blue-600 rounded-2xl p-3 mr-4 w-14 h-14 flex items-center justify-center transform rotate-6">
+                    <i class="fas fa-tools text-white text-xl"></i>
                 </div>
-                <h2 class="text-2xl font-semibold text-gray-900">Troubleshooting & Best Practices</h2>
+                <h2 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-blue-500">Troubleshooting & Best Practices</h2>
             </div>
 
             <div class="space-y-8">
@@ -312,38 +407,28 @@ globs: src/components/**/*.tsx, src/components/**/*.jsx
                         </li>
                     </ul>
                 </div>
-
-                <!-- Pro Tips -->
-                <div class="bg-gray-50 p-6 rounded-lg">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-lightbulb text-amber-600 mr-2"></i>
-                        <h3 class="font-semibold text-lg text-gray-900">Pro Tips</h3>
-                    </div>
-                    <ul class="list-disc list-inside space-y-3 ml-4">
-                        <li class="text-gray-700">Break down large changes into smaller, focused requests</li>
-                        <li class="text-gray-700">Use screenshots and examples for visual changes</li>
-                        <li class="text-gray-700">Keep the cursor rules updated as your project evolves</li>
-                        <li class="text-gray-700">Regularly check Cursor's documentation list for updates</li>
-                    </ul>
-                </div>
             </div>
         </div>
 
         <div class="mt-16 text-center">
-            <p class="text-gray-600">Need help or want to contribute?</p>
-            <a href="https://github.com/blodyle/cursorrules" target="_blank" class="inline-flex items-center mt-2 text-indigo-600 hover:text-indigo-700">
+            <p class="text-gray-600 mb-4">Need help or want to contribute?</p>
+            <a href="https://github.com/blodyle/cursorrules" target="_blank" class="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-indigo-600 to-blue-500 text-white font-semibold hover:from-indigo-700 hover:to-blue-600 transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
                 <i class="fab fa-github mr-2"></i>
                 Visit our GitHub repository
+                <i class="fas fa-arrow-right ml-2 animate-pulse"></i>
             </a>
         </div>
     </main>
 
-    <footer class="w-full bg-white py-4 border-t border-gray-100">
+    <footer class="w-full py-8 bg-gradient-to-b from-gray-50 to-white border-t border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-gray-500 mb-2">Made with ❤️ for the Cursor AI community</p>
-            <p class="text-gray-400 text-sm">
-                <i class="fas fa-robot mr-1"></i>
-                This guide and its examples were generated using AI (Claude-3.5-sonnet) in Cursor in about 1:30 hours.
+            <p class="text-gray-500 mb-2">Made with 
+                <i class="fas fa-heart text-red-500 animate-pulse"></i> 
+                for the Cursor AI community
+            </p>
+            <p class="text-gray-400 text-sm flex items-center justify-center space-x-2">
+                <i class="fas fa-robot animate-bounce"></i>
+                <span>This guide and its examples were generated using AI (Claude-3.5-sonnet) in Cursor in about 2 hours.</span>
             </p>
         </div>
     </footer>
