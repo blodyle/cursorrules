@@ -1,0 +1,22 @@
+---
+description: Core features and areas of TaskMaster
+globs: 
+---
+## Core Features and Areas
+  1. **Task Management**
+     - Purpose: Create and manage todo items
+     - Core functionality: CRUD operations for tasks
+     - Technical requirements: Real-time updates
+     - User interactions: Add, edit, complete tasks
+
+  2. **Categories**
+     - Purpose: Organize tasks by type
+     - Core functionality: Group tasks into categories
+     - Technical requirements: Database relations
+     - User interactions: Create, edit categories
+
+  3. **Basic Reminders**
+     - Purpose: Notify users of due tasks
+     - Core functionality: Browser notifications
+     - Technical requirements: Web Push API
+     - User interactions: Set due dates and times

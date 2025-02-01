@@ -1,0 +1,19 @@
+---
+description: Overview of the TaskMaster project
+globs: 
+---
+# TaskMaster
+
+## Project Overview
+  ### Purpose
+  A minimalist todo application that helps users organize their daily tasks with a focus on simplicity and ease of use. The app features a clean interface, task categorization, and basic reminders to help users stay productive without overwhelming them with complex features.
+
+  ### Target Audience
+  - Primary: Busy professionals looking for a straightforward task management solution
+  - Secondary: Students managing assignments and deadlines
+
+  ### Project Information
+  - Project Name: TaskMaster
+  - Website: taskmaster.example.com
+  - Repository: github.com/example/taskmaster
+  - License: MIT

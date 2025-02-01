@@ -1,0 +1,11 @@
+---
+description: Defines the tech stack for TaskMaster
+globs: 
+---
+  ### Tech Stack
+  - **Frontend:** [Next.js (v14.0.0)](https://nextjs.org/docs) with App Router
+  - **Backend:** [Next.js API Routes](https://nextjs.org/docs/api-routes/introduction)
+  - **Database:** [SQLite (v3.42.0)](https://www.sqlite.org/docs.html) for simplicity
+  - **Styling:** [Tailwind CSS (v3.3.0)](https://tailwindcss.com/docs)
+  - **Authentication:** [NextAuth.js (v4.24.5)](https://next-auth.js.org/)
+  - **Form Handling:** [React Hook Form (v7.49.2)](https://react-hook-form.com/)

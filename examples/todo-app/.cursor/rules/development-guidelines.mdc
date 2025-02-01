@@ -1,0 +1,51 @@
+---
+description: Development guidelines for TaskMaster
+globs: 
+---
+## Development Guidelines
+  ### Frontend
+  - Use server components by default
+  - Client components only for interactive elements
+  - Keep components small and focused
+  - Use React Hook Form for form handling
+  - Implement optimistic updates for better UX
+
+  ### Backend
+  - RESTful API design
+  - Zod for request validation
+  - Error handling with proper status codes
+  - Rate limiting for API endpoints
+  - SQLite with Prisma ORM
+
+## File Organization:
+  - `/app` - Next.js app router pages
+  - `/components` - Reusable UI components
+  - `/lib` - Utility functions and helpers
+  - `/prisma` - Database schema and migrations
+
+## Code Documentation:
+  - Document complex business logic
+  - Explain component props
+  - Comment database schema relations
+
+## Component Guidelines:
+  - Keep pages as server components
+  - Extract client interactivity to separate components
+  - Use composition over inheritance
+
+## Testing Approach:
+  - Group tests by feature
+  - Mock external dependencies
+  - Test user interactions thoroughly
+
+## Error Handling:
+  - Custom error classes
+  - User-friendly error messages
+  - Proper error logging
+
+## Additional Notes
+  - Browser Support: Latest 2 versions of major browsers
+  - Offline Support: PWA capabilities
+  - Performance: Lighthouse score > 90
+  - Accessibility: Screen reader friendly
+  - Mobile Support: iOS 14+, Android 8+

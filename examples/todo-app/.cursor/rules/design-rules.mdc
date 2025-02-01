@@ -1,0 +1,22 @@
+---
+description: Core design rules for TaskMaster
+globs: *.tsx
+---
+## Core Design Rules
+  ### UI/UX Guidelines
+  1. **Responsive Design:** Mobile-first approach using Tailwind's responsive utilities
+  2. **Navigation:** Simple top navigation with task categories in a sidebar
+  3. **Color Scheme:**
+     - `primary`: #3B82F6 (blue-500) for actions and highlights
+     - `secondary`: #6B7280 (gray-500) for secondary elements
+  4. **Typography:** System fonts for optimal performance
+  5. **Components:** Use shadcn/ui for consistent UI elements
+  6. **Accessibility:** WCAG 2.1 Level AA compliance
+  7. **Language:** English for both UI and codebase
+
+  ### Development Standards
+  1. **Code Style:** ESLint with Next.js defaults
+  2. **Documentation:** JSDoc for functions, README for setup
+  3. **Testing:** Jest for unit tests, 70% coverage minimum
+  4. **Performance:** < 3s initial load time
+  5. **Security:** Input sanitization, CSRF protection
