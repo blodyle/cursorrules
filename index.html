@@ -196,9 +196,30 @@
                         <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
                             <li>Create a new repository</li>
                             <li>Initialize a basic project (e.g., Next.js app)</li>
-                            <li>Add .cursorrules file to the root</li>
-                            <li>Create separate .cursorrules for different tech stacks (e.g., frontend/backend)</li>
+                            <li>Add .cursor/rules directory to the root</li>
+                            <li>Create separate rule files for different aspects (e.g., design, development)</li>
                         </ul>
+                        
+                        <div class="mt-4 bg-gray-50 p-4 rounded-lg">
+                            <p class="text-gray-700 mb-2">
+                                <i class="fas fa-lightbulb text-amber-600 mr-2"></i>
+                                <strong>Pro Tip:</strong> Use the <code class="bg-gray-200 px-1 rounded">globs</code> option in your rule files to make them specific to certain file patterns:
+                            </p>
+                            <div class="font-mono text-sm bg-gray-100 p-3 rounded">
+                                <pre class="text-gray-700">---
+description: Style guidelines for React components
+globs: src/components/**/*.tsx, src/components/**/*.jsx
+---
+
+## Component Style Rules
+  - Use functional components
+  - Follow BEM naming convention
+  - Implement responsive design</pre>
+                            </div>
+                            <p class="text-gray-600 text-sm mt-2">
+                                This rule file will only be applied when working with React component files in the specified directories.
+                            </p>
+                        </div>
                     </div>
 
                     <div class="border-l-4 border-indigo-500 pl-4">
