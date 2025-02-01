@@ -1,0 +1,25 @@
+---
+description: Gives an overview of the purpose and motivation around the project
+globs: 
+---
+# [Project Name]
+Replace with your project name. Make it descriptive and clear.
+
+## Project Overview
+  ### Purpose
+  Provide a clear, concise description of what your project does and why it exists.
+  Example: "A web application that helps users track their daily water intake..."
+
+  ### Target Audience
+  List your primary and secondary user groups. Be specific about who will use your application.
+  Example:
+  - Primary: Health-conscious individuals aged 25-45
+  - Secondary: Fitness trainers and health coaches
+
+  ### Project Information
+  Add relevant project/company details
+  - Project Name
+  - Website
+  - Contact Information
+  - Repository
+  - License

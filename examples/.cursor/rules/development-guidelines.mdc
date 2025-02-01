@@ -1,0 +1,56 @@
+---
+description: Guidelines to follow when writing code
+globs: 
+---
+## Development Guidelines
+  ### Frontend
+  Specify frontend-specific rules
+  Example:
+  - Component structure and organization
+  - State management approach
+  - Routing conventions
+  - Asset management
+  - Performance optimization techniques
+
+  ### Backend
+  Specify backend-specific rules
+  Example:
+  - API design principles
+  - Error handling standards
+  - Database schema conventions
+  - Caching strategies
+  - Security measures
+
+  ### DevOps
+  Define deployment and operations guidelines
+  Example:
+  - CI/CD pipeline requirements
+  - Environment configurations
+  - Monitoring and logging
+  - Backup strategies
+
+
+## File Organization:
+  - Keep related files close together
+  - Use clear, descriptive file names
+  - Maintain a logical folder structure
+
+## Code Documentation:
+  - Write clear comments for complex logic
+  - Include JSDoc/TSDoc for functions
+  - Explain business logic in comments
+
+## Component Guidelines:
+  - Separate client and server components
+  - Keep components focused and single-purpose
+  - Document props and state management
+
+## Testing Approach:
+  - Write descriptive test names
+  - Group related tests
+  - Include setup and teardown explanations
+
+## Error Handling:
+  - Use descriptive error messages
+  - Implement proper error boundaries
+  - Log errors appropriately

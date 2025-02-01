@@ -1,0 +1,11 @@
+---
+description: Defines the tech stack to use
+globs: 
+---
+  ### Tech Stack
+  List all major technologies with versions and documentation links
+  Always specify versions to ensure consistency
+  Example format:
+  - Frontend: [Next.js (v14.0.0)](mdc:https:/nextjs.org/docs)
+  - Database: [PostgreSQL (v15.0)](mdc:https:/www.postgresql.org/docs)
+  Add any specific configurations or requirements for each technology

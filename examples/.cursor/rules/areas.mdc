@@ -1,0 +1,21 @@
+---
+description: Defines the core areas and features of the app
+globs: 
+---
+## Core Features and Areas
+  List main features and functionalities
+  For each feature, include:
+  - Purpose
+  - Core functionality
+  - Technical requirements
+  - User interactions
+  Example:
+  1. User Authentication
+     - Purpose: Secure user access
+     - Core functionality: Login, registration, password reset
+     - Technical requirements: JWT, OAuth
+     - User interactions: Login forms, verification emails
+  2. Dashboard
+     - Purpose: Show the business at a glance
+     - Core functionality: Previous month data visualisation using charts
+     - Technical requirements: Chart.js and efficient data gathering

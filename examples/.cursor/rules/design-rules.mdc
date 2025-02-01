@@ -1,0 +1,23 @@
+---
+description: Specifies the core design rules
+globs: *.tsx
+---
+## Core Design Rules
+  ### UI/UX Guidelines
+  List your core design principles and rules
+  Example:
+  1. **Responsive Design:** How your app should behave across different devices
+  2. **Navigation:** Core navigation patterns and rules
+  3. **Color Scheme:** Define your color palette and usage rules
+  4. **Typography:** Font choices and text hierarchy
+  5. **Components:** Reusable component guidelines
+  6. **Accessibility:** WCAG compliance level and specific requirements
+  7. **Language:** Specify language rules for code and content
+
+  ### Development Standards
+  Define coding standards and practices
+  1. **Code Style:** Linting rules and formatting standards
+  2. **Documentation:** How and what to document
+  3. **Testing:** Testing requirements and coverage expectations
+  4. **Performance:** Performance budgets and optimization rules
+  5. **Security:** Security requirements and best practices
