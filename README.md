@@ -1,74 +1,54 @@
-# CursorRules - Project Structure Generator
+# CursorRules
 
-A guide to creating effective `.cursorrules` files for your projects, helping Cursor AI understand and scaffold your project structure efficiently.
+Project rules structure for Cursor AI. Visit our [landing page](https://blodyle.github.io/cursorrules) for a detailed guide.
 
-## What is a .cursorrules file?
+## Quick Start
 
-A `.cursorrules` file is a structured markdown document that provides Cursor AI with detailed information about your project's architecture, design rules, and technical requirements. This helps in generating consistent and well-organized code that follows your project's standards.
+1. Create the rules directory structure:
+```bash
+mkdir -p .cursor/rules/
+```
 
-## File Structure
+2. Add the required files:
+```
+.cursor/rules/
+├── overview.mdc     # Project overview and architecture
+├── tech-stack.mdc   # Technologies and dependencies
+├── design-rules.mdc # UI/UX and styling standards
+├── areas.mdc        # Features and components
+└── development-guidelines.mdc # Code standards
+```
 
-Your `.cursorrules` file should include these main sections:
+3. Configure file-specific rules using globs:
+```yaml
+---
+description: React component guidelines
+globs: 
+  - src/components/**/*.tsx
+  - src/components/**/*.jsx
+---
 
-1. **Project Overview**
-   - Purpose and objectives
-   - Target audience
-   - Tech stack with specific versions
-   - Company/Project information
+## Component Rules
+- Use functional components
+- Follow project naming conventions
+- Implement proper prop types
+```
 
-2. **Core Design Rules**
-   - UI/UX guidelines
-   - Styling conventions
-   - Language requirements
-   - Accessibility standards
+## Examples
 
-3. **Key Areas and Features**
-   - Main functionalities
-   - Critical components
-   - User interactions
-
-4. **Development Guidelines**
-   - Frontend practices
-   - Backend standards
-   - Database rules
-   - Testing requirements
-
-5. **Area-Specific Instructions**
-   - Detailed requirements per feature
-   - Component specifications
-   - Integration points
-
-## Best Practices
-
-1. **Be Specific**
-   - Always include version numbers for technologies
-   - Link to official documentation
-   - Define clear boundaries and constraints
-
-2. **Stay Consistent**
-   - Use consistent formatting throughout
-   - Maintain clear section hierarchy
-   - Follow a logical flow of information
-
-3. **Keep it Updated**
-   - Regularly review and update rules
-   - Document major changes
-   - Align with current best practices
-
-## Example
-
-Check out our example `.cursorrules` files in the `examples/` directory:
-- [Water Tracker App](examples/water-tracker.cursorrules)
-- [Todo App](examples/todo-app.cursorrules)
-- [Recipe Finder](examples/recipe-finder.cursorrules)
+Check the `examples/` directory for complete rule setups:
+- [Water Tracker](examples/water-tracker/.cursor/rules/)
+- [Todo App](examples/todo-app/.cursor/rules/)
+- [Recipe Finder](examples/recipe-finder/.cursor/rules/)
 
 ## Contributing
 
-Feel free to contribute by:
-1. Sharing your `.cursorrules` examples
-2. Suggesting improvements to the structure
-3. Reporting issues or unclear sections
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-rules`)
+3. Commit your changes (`git commit -m 'Add some amazing rules'`)
+4. Push to the branch (`git push origin feature/amazing-rules`)
+5. Open a Pull Request
 
 ## License
 
-MIT License - feel free to use and modify for your projects.
+MIT
